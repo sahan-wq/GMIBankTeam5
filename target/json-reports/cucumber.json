@@ -1,0 +1,47 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-14T10:03:27.625Z",
+        "line": 3,
+        "name": "TC02_kullanici database baglantini kontrol eder",
+        "description": "",
+        "id": "database-test;tc02-kullanici-database-baglantini-kontrol-eder",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "kullanici veritabanina baglanir",
+            "match": {},
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db"
+          }
+        ]
+      }
+    ],
+    "name": "DataBase Test",
+    "description": "",
+    "id": "database-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/db.feature",
+    "tags": [
+      {
+        "name": "@db",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
