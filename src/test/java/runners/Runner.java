@@ -13,9 +13,10 @@ import org.junit.runner.RunWith;
         //plugin = "html:target\\default-cucumber-reports",//for windows
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@US10Negative",
+        tags = "@US10Negative_TC006",
         dryRun = false
 )
+
 public class Runner {
 
 }

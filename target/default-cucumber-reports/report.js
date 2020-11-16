@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.background({
-  "name": ": TC_01 Address as street and number should be provided and cannot be left blank",
+  "name": ":",
   "description": "",
   "keyword": "Background"
 });
@@ -85,11 +85,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user fills in the SSN textbox",
+  "name": "user fills in the SSN textbox \"352-34-4678\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_SSN_textbox()"
+  "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_SSN_textbox(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -135,28 +135,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "",
+  "name": "Leave the State textbox empty",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
       "name": "@US10Negative"
+    },
+    {
+      "name": "@US10Negative_TC006"
     }
   ]
 });
 formatter.step({
-  "name": "user clears in the Address textbox",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.US10Negative_StepDefinitions.user_clears_in_the_Address_textbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "user fills in the City textbox with valid credential \"Dakota City\"",
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
   "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_City_textbox_with_valid_credential(java.lang.String)"
@@ -170,16 +163,6 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.US10Negative_StepDefinitions.user_selects_a_country_from_Country_dropdown()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user fills in the State textbox with valid credential \"North Dakota\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_State_textbox_with_valid_credential(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -205,15 +188,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user sees redbox and error message",
+  "name": "user sees the error message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.US10Negative_StepDefinitions.user_sees_redbox_and_error_message()"
+  "location": "stepdefinitions.US10Negative_StepDefinitions.user_sees_the_error_message()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefinitions.US10Negative_StepDefinitions.user_sees_the_error_message(US10Negative_StepDefinitions.java:115)\r\n\tat ✽.user sees the error message(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US10_NegativeAdress.feature:70)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshots");
 formatter.after({
   "status": "passed"
 });
